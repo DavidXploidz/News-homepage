@@ -35,7 +35,7 @@ a{
     text-decoration: none !important;
 }
 .image-web{
-    background-image: url(images/image-web-3-mobile.jpg);
+    background-image: url(../images/image-web-3-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -45,7 +45,7 @@ a{
 }
 @media (min-width: 768px){ 
     .image-web{
-        background-image: url(images/image-web-3-desktop.jpg);
+        background-image: url(../images/image-web-3-desktop.jpg);
         background-repeat: no-repeat;
         background-position: center;
         min-width: 100%;

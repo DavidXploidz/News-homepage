@@ -1,18 +1,17 @@
-
-// Selectores Globales
-const menuHam = document.querySelector('#menuHam')
-const menuOculto = document.querySelector('#menuOculto')
-const closeMenu = document.querySelector('#closeMenu')
-const modalBackDrop = document.querySelector('#modal-backdrop')
+// Selectores
+const menuHam = document.querySelector('#menu-ham')
+const menuMobile = document.querySelector('.menuMobile')
+const close = document.querySelector('#close-menu')
+const cortinilla = document.querySelector('#cortinilla')
 
 menuHam.addEventListener('click', () => {
-    menuOculto.classList.add('activo')
+    menuMobile.classList.add('menuMobile--activo')
+    cortinilla.classList.add('menuMobile__cortina--activo')
     document.body.style.overflowY = 'hidden'
-    modalBackDrop.classList.add('fondoObscuro')
 })
 
-closeMenu.addEventListener('click', () => {
-    menuOculto.classList.remove('activo')
-    document.body.style.overflowY = 'scroll'
-    modalBackDrop.classList.remove('fondoObscuro')
+close.addEventListener('click', () => {
+    menuMobile.classList.remove('menuMobile--activo')
+    cortinilla.classList.remove('menuMobile__cortina--activo')
+    document.body.style.overflowY = 'visible'
 })

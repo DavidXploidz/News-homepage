@@ -14,9 +14,29 @@
 </head>
 <body class="contenedor grid-areas">
     <nav class="nav">
-        <img src="images/logo.svg" alt="image logo page">
-        <img src="images/icon-menu.svg" alt="menu ham icon">
+        <img class="nav__logo" src="images/logo.svg" alt="image logo page">
+        <img class="nav__ham" id="menu-ham" src="images/icon-menu.svg" alt="menu ham icon">
+        <ul class="nav__ul">
+            <li class="nav__li">Home</li>
+            <li class="nav__li">New</li>
+            <li class="nav__li">Popular</li>
+            <li class="nav__li">Trending</li>
+            <li class="nav__li">Categories</li>
+        </ul>
     </nav>
+    <!-- menu oculto -->
+    <div class="menuMobile">
+        <img class="menuMobile__img" id="close-menu" src="images/icon-menu-close.svg" alt="icon menu close">
+        <ul class="menuMobile__ul">
+            <li class="menuMobile__li">Home</li>
+            <li class="menuMobile__li">New</li>
+            <li class="menuMobile__li">Popular</li>
+            <li class="menuMobile__li">Trending</li>
+            <li class="menuMobile__li">Categories</li>
+        </ul>
+    </div>
+    <!-- cortinilla -->
+    <div class="menuMobile__cortina" id="cortinilla"></div>
     <main class="main">
         <img class="main__img" src="images/image-web-3-mobile.jpg" alt="main image">
         <h1 class="main__h1">The Bright Future of Web 3.0?</h1>
@@ -69,5 +89,6 @@
             </div>
         </div>
     </section>
+    <script src="js/app.js"></script>
 </body>
 </html>

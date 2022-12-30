@@ -11,104 +11,63 @@
     <!-- Styles  -->
     <link rel="stylesheet" href="css/styles.css">
     <title>News HomePage</title>
-    <!-- Boostrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
-    <div id="modal-backdrop" class=""></div>
-    <header class="container mt-3">
-        <nav class="d-flex justify-content-between align-items-center">
-            <img src="images/logo.svg" alt="logo news">
-            <ul>
-                <li><img class="d-flex d-md-none" id="menuHam" src="images/icon-menu.svg" alt="icon ham menu"></li>
-            </ul>
-            <ul class="grid-nav">
-                <li><a href="#" class="enlace">Home</a></li>
-                <li><a href="#" class="enlace">New</a></li>
-                <li><a href="#" class="enlace">Popular</a></li>
-                <li><a href="#" class="enlace">Trending</a></li>
-                <li><a href="#" class="enlace">Categories</a></li>
-            </ul>
-            <div id="menuOculto">
-                <div class="position-relative">
-                    <img id="closeMenu" class="position-absolute" style="right: 0; cursor: pointer;" src="images/icon-menu-close.svg" alt="icon close menu">
-                    <ul style="padding-top: 7rem;">
-                        <li class="pb-3"><a href="#">Home</a></li>
-                        <li class="pb-3"><a href="#">New</a></li>
-                        <li class="pb-3"><a href="#">Popular</a></li>
-                        <li class="pb-3"><a href="#">Trending</a></li>
-                        <li class="pb-3"><a href="#">Categories</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main class="container mt-4 grid-main">
-        <div>
-            <!-- Image Mobile BG -->
-            <div class="image-web"></div>
-            <div class="grid-2">
-                <h1 class="titulo-web">The Bright <span class="d-block">Future of Web <span class="d-block">3.0?</span></span></h1>
-                <div>
-                    <p class="parrafo-web">
-                        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                        But is it really fulfilling its promise?
-                    </p>
-                    <button class="btn-more">
-                        Read more
-                    </button>
-                </div>
-            </div>
-            
-        </div>
-        <div class="my-5 my-md-0 p-3" id="new-card" style="background-color: var(--VeryDarkBlue);">
-            <h2 class="titulo-new">New</h2>
-            <div>
-                <h3 class="subHead3">Hydrogen VS Electric Cars</h3>
-                <p class="parrafo-web2">
-                    Will hydrogen-fueled cars ever catch up to EVs?
-                </p>
-            </div>
-            <div class="my-4">
-                <h3 class="subHead3">The Downsides of AI Artistry</h3>
-                <p class="parrafo-web2">
-                    What are the possible adverse effects of on-demand AI image generation?
-                </p>
-            </div>
-            <div>
-                <h3 class="subHead3">Is VC Funding Drying Up?</h3>
-                <p class="parrafo-web2">
-                    Private funding by VC firms is down 50% YOY. We take a look at what that means.
-                </p>
-            </div>
+<body class="contenedor grid-areas">
+    <nav class="nav">
+        <img src="images/logo.svg" alt="image logo page">
+        <img src="images/icon-menu.svg" alt="menu ham icon">
+    </nav>
+    <main class="main">
+        <img class="main__img" src="images/image-web-3-mobile.jpg" alt="main image">
+        <h1 class="main__h1">The Bright Future of Web 3.0?</h1>
+        <div class="main__info">
+            <p class="main__p">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+            </p>
+            <button class="main__btn">Read more</button>
         </div>
     </main>
-    <section class="container d-block d-md-flex justify-content-between mt-0 mt-md-5">
-        <div class="d-flex mb-4">
-            <img class="image-retro" src="images/image-retro-pcs.jpg" alt="icon retro">
-            <div class="px-3">
-                <span class="num-style">01</span>
-                <h4 class="subHead4">Reviving Retro PCs</h4>
-                <p style="color: var(--DarkGrayishBlue)">What happens when old PCs are given modern upgrades?</p>
+    <aside class="aside">
+        <h2 class="aside__h2">New</h2>
+        <div class="aside__content">
+            <h3 class="aside__h3">Hydrogen VS Electric Cars</h3>
+            <p class="aside__p">Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="aside__content">
+            <h3 class="aside__h3">The Downsides of AI Artistry</h3>
+            <p class="aside__p">What are the possible adverse effects of on-demand AI image generation?</p>
+        </div>
+        <div class="aside__content">
+            <h3 class="aside__h3">Is VC Funding Drying Up?</h3>
+            <p class="aside__p">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+    </aside>
+    <section class="section">
+        <div class="section__content">
+            <img class="section__img" src="images/image-retro-pcs.jpg" alt="image retro">
+            <div class="section__info">
+                <p class="section__num">01</p>
+                <h4 class="section__h4">Reviving Retro PCs</h4>
+                <p class="section__p">What happens when old PCs are given modern upgrades?</p>
             </div>
         </div>
-        <div class="d-flex mb-4">
-            <img class="image-retro" src="images/image-top-laptops.jpg" alt="icon laptops">
-            <div class="px-3">
-                <span class="num-style">02</span>
-                <h4 class="subHead4">Top 10 Laptops of 2022</h4>
-                <p style="color: var(--DarkGrayishBlue)">Our best picks for various needs and budgets.</p>
+        <div class="section__content">
+            <img class="section__img" src="images/image-top-laptops.jpg" alt="image top">
+            <div class="section__info">
+                <p class="section__num">02</p>
+                <h4 class="section__h4">Top 10 Laptops of 2022</h4>
+                <p class="section__p">Our best picks for various needs and budgets.</p>
             </div>
         </div>
-        <div class="d-flex mb-4">
-            <img class="image-retro" src="images/image-gaming-growth.jpg" alt="icon gaming">
-            <div class="px-3">
-                <span class="num-style">03</span>
-                <h4 class="subHead4">The Growth of Gaming</h4>
-                <p style="color: var(--DarkGrayishBlue)">How the pandemic has sparked fresh opportunities.</p>
+        <div class="section__content">
+            <img class="section__img" src="images/image-gaming-growth.jpg" alt="image gaming">
+            <div class="section__info">
+                <p class="section__num">03</p>
+                <h4 class="section__h4">The Growth of Gaming</h4>
+                <p class="section__p">How the pandemic has sparked fresh opportunities.</p>
             </div>
         </div>
     </section>
-    <script src="js/app.js"></script>
 </body>
 </html>
